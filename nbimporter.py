@@ -40,8 +40,6 @@ class NotebookLoader(object):
         """import a notebook as a module"""
         path = find_notebook(fullname, self.path)
 
-        print ("importing Jupyter notebook from %s" % path)
-
         # load the notebook object
         nb_version = nbformat.version_info[0]
         
